@@ -27,6 +27,7 @@ void printOption(const string& option);
 
 //!!-----Display Functions
 void displayCurrentTime();
+void displayUnderDevelopment();
 
 //!!-----Validation Functions
 void clearIgnore();

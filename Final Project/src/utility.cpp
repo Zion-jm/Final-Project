@@ -18,9 +18,9 @@ void lineDesign() {
 }
 
 void printOption(const string& option) {
-    cout << left << setw(34) << setfill('-') << "" << endl;
-    cout << "|" << left << setw(32) << option << right << "|" << endl;
-    cout << left << setw(34) << setfill('-') << "" << endl;
+    cout << left << setw(36) << setfill('-') << "" << endl;
+    cout << "|" << left << setw(34) << setfill(' ') << option << right << "|" << endl;
+    cout << left << setw(36) << setfill('-') << "" << endl;
 }
 
 
@@ -32,13 +32,16 @@ void displayCurrentTime() {
     std::tm* localTime = std::localtime(&now);
 
     // Print the current local time up to minute precision
-    cout << "Current Date and Time: "
-            << localTime->tm_year + 1900 << '-' // Year
+    cout << localTime->tm_year + 1900 << '-' // Year
             << setw(2) << std::setfill('0') << localTime->tm_mon + 1 << '-' // Month
             << setw(2) << std::setfill('0') << localTime->tm_mday << ' ' // Day
             << setw(2) << std::setfill('0') << localTime->tm_hour << ':' // Hour
             << setw(2) << std::setfill('0') << localTime->tm_min // Minute
             << endl;
+}
+
+void displayUnderDevelopment() {
+    cout << "This Section Is Still Under Development. Enter 0 To Go Back." << endl;
 }
 
 
@@ -57,7 +60,7 @@ int getValidInput(int Min, int Max, const string& prompt) {
             cout << prompt;
         }
         if(!(choice >= Min && choice <= Max)) {
-            cout << "Invalid Input! Please Enter An Integer Between " << Min << " - " << Max << endl;
+            cout << "Invalid Input! Please Enter An Integer From " << Min << " - " << Max << endl;
             clearIgnore();
             cout << prompt;
         }

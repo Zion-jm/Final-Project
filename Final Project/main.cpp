@@ -1,10 +1,11 @@
+//!!My Profile Section - Set Preferences (Not Done)
+
 #include "manage_profile.h"
 #include "save_load_profile.h"
 #include "utility.h"
-
-#include <chrono>
-#include <thread>
-#include <ctime>
+#include "my_profile_section.h"
+#include "user_task.h"
+#include "task_management_section.h"
 
 int main() {
     string Name, Program;
@@ -24,6 +25,8 @@ int main() {
     }
 
     Manage_Profile User(Name, Program);
+    User_Task UserTask;
+    User_Task TaskFound;
 
     int choice;
     while(true) {
@@ -31,7 +34,7 @@ int main() {
 
         displayCurrentTime();
         headerDesign("StudentPal");
-        User.displayProfile();
+        User.profileHeader();
         lineDesign();
 
         printOption("[1] My Profile");
@@ -53,7 +56,7 @@ int main() {
             return 0;
 
         case 1://!!My Profile Section
-
+            MyProFileSection(User);
             break;
 
         case 2://!!Dashboard Section
@@ -65,7 +68,7 @@ int main() {
             break;
 
         case 4://!!Task Management Section
-
+            TaskManagementSection(UserTask, TaskFound);
             break;
 
         case 5://!!Notifications Section

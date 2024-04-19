@@ -3,6 +3,11 @@
 Manage_Profile::Manage_Profile(const string& name, const string& program)
     : UserName(name), UserProgram(program) {}
 
+void Manage_Profile::profileHeader() {
+    cout << left << setw(20) << setfill(' ') << UserName;
+    cout << UserProgram << endl;
+}
+
 void Manage_Profile::displayProfile() {
     cout << "Name: " << UserName << endl;
     cout << "Program: " << UserProgram << endl;

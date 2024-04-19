@@ -1,9 +1,10 @@
 # depslib dependency file v1.0
-1713490988 source:d:\joshua's files\bsit 1, school work\2nd sem\computer programming 2\final project\final project\src\manage_profile.cpp
+1713528768 source:d:\joshua's files\bsit 1, school work\2nd sem\computer programming 2\final project\final project\src\manage_profile.cpp
 	"manage_profile.h"
 
-1713490986 d:\joshua's files\bsit 1, school work\2nd sem\computer programming 2\final project\final project\include\manage_profile.h
+1713528897 d:\joshua's files\bsit 1, school work\2nd sem\computer programming 2\final project\final project\include\manage_profile.h
 	<iostream>
+	<iomanip>
 	<string>
 
 1713492364 source:d:\joshua's files\bsit 1, school work\2nd sem\computer programming 2\final project\final project\src\save_load_profile.cpp
@@ -14,18 +15,51 @@
 	<fstream>
 	"manage_profile.h"
 
-1713507776 source:d:\joshua's files\bsit 1, school work\2nd sem\computer programming 2\final project\final project\main.cpp
+1713542426 source:d:\joshua's files\bsit 1, school work\2nd sem\computer programming 2\final project\final project\main.cpp
 	"manage_profile.h"
 	"save_load_profile.h"
 	"utility.h"
-	<chrono>
-	<thread>
+	"my_profile_section.h"
+	"user_task.h"
+	"task_management_section.h"
 
-1713509552 d:\joshua's files\bsit 1, school work\2nd sem\computer programming 2\final project\final project\include\utility.h
+1713528776 d:\joshua's files\bsit 1, school work\2nd sem\computer programming 2\final project\final project\include\utility.h
 	<iostream>
 	<string>
 	<iomanip>
+	<chrono>
+	<ctime>
+	<thread>
+	<limits>
 
-1713508308 source:d:\joshua's files\bsit 1, school work\2nd sem\computer programming 2\final project\final project\src\utility.cpp
+1713528945 source:d:\joshua's files\bsit 1, school work\2nd sem\computer programming 2\final project\final project\src\utility.cpp
 	"utility.h"
+
+1713528689 source:d:\joshua's files\bsit 1, school work\2nd sem\computer programming 2\final project\final project\src\my_profile_section.cpp
+	"my_profile_section.h"
+
+1713528688 d:\joshua's files\bsit 1, school work\2nd sem\computer programming 2\final project\final project\include\my_profile_section.h
+	"manage_profile.h"
+	"utility.h"
+
+1713535486 source:d:\joshua's files\bsit 1, school work\2nd sem\computer programming 2\final project\final project\src\save_load_mytask.cpp
+	"save_load_myTask.h"
+
+1713535508 d:\joshua's files\bsit 1, school work\2nd sem\computer programming 2\final project\final project\include\save_load_mytask.h
+
+1713542312 source:d:\joshua's files\bsit 1, school work\2nd sem\computer programming 2\final project\final project\src\user_task.cpp
+	"user_task.h"
+
+1713542867 d:\joshua's files\bsit 1, school work\2nd sem\computer programming 2\final project\final project\include\user_task.h
+	"utility.h"
+	<vector>
+	<ctime>
+	<algorithm>
+
+1713542426 source:d:\joshua's files\bsit 1, school work\2nd sem\computer programming 2\final project\final project\src\task_management_section.cpp
+	"task_management_section.h"
+
+1713542394 d:\joshua's files\bsit 1, school work\2nd sem\computer programming 2\final project\final project\include\task_management_section.h
+	"utility.h"
+	"user_task.h"
 
